@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class MainFragment extends Fragment implements OnClickListener
 {
@@ -261,10 +262,12 @@ public class MainFragment extends Fragment implements OnClickListener
 			for (int i = 0; i < 10; i++)
 			{
 				// Check if this has been cancelled, e.g. when the dialog is dismissed.
-				if (isCancelled())
+				if (isCancelled()) {
+
 					return null;
-				
-				SystemClock.sleep(2000);
+
+				}
+				SystemClock.sleep(500);
 				mProgress = i * 10;
 				publishProgress();
 			}
