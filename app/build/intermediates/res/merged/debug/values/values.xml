@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Progress Dialog Test</string>
+    <string name="title_activity_main">Main</string>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+</resources>
